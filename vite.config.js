@@ -5,10 +5,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        // Agrega más páginas según sea necesario
         'login': './src/pages/login.html',
-        'dashboard': './src/pages/dashboard.html'
+        'dashboard': './src/pages/dashboard.html',
       },
     },
+    target: 'esnext',  // Aquí especificamos el target para que soporte top-level await
   },
 });
